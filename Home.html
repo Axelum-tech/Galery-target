@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Galery</title>
+        <style>
+            body{
+                background-image: url(https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+                margin: 0px;
+            }
+
+            .title{
+                text-align: center;
+                color: white;
+                margin-bottom: 70px;
+
+            }
+
+            .photos{
+                text-align: center;
+                
+             }
+
+            img{
+                width: 280px;
+                margin-left: -167px;
+                margin-right: -167px;
+                border: 5px solid white;
+                padding: 20px;
+                background-color: black;
+                box-shadow: 0 0 5px 5px black;
+                transition: 5s;
+            }
+
+        
+
+            img:nth-child(5) {
+                transform: translate(400px) rotate(45deg);
+
+            }
+
+            img:nth-child(4) {
+                transform:  translatex(-400px) rotate(-25deg);
+            }
+
+            img:nth-child(3) {
+                transform: translatey(400px) rotate(5deg);
+            }
+
+            img:nth-child(2) {
+                transform: translatex(-350px) translatey(350px) rotate(-15deg);
+            }
+
+            img:nth-child(1) {
+                transform: rotate(-35deg);
+            }
+
+          
+            img:target{
+               transform: rotate(0) scale(1.3)
+            }
+        </style>
+</head>
+<body>
+    <h1 class="title">Galery</h1>
+    <div class="photos">
+
+        <a href="#first">
+    <img id="first"  src="https://i.picsum.photos/id/271/400/600.jpg?hmac=rcv3HyyFgJJXz677LMS1aYq_lpC7B0B9c0AVcXz_PRM" alt=""></a>
+        
+    <a href="#second">
+    <img id="second" src="https://i.picsum.photos/id/363/400/600.jpg?hmac=m3Pu5n4t37fWS-q48XLKo2_vzz5TlIRCpTW8-etw-OI" alt=""></a>
+
+    <img src="https://i.picsum.photos/id/584/400/600.jpg?hmac=bMTF8xouO1aUrdC1cl9gorZdv7agv88Ib9vmC09JY0Y" alt="">
+
+    <img src="https://i.picsum.photos/id/1031/400/600.jpg?hmac=mDtWj5sB58GzDAeIahnycTpNREWCU0NKoVs_livBLbs" alt="">
+
+    <a href="#fifth">
+    <img id="fifth" src="https://i.picsum.photos/id/419/400/600.jpg?hmac=hjTUA-XLPOP9QyJKsOw1mlpwWRWsdxP0Eh4RZdTxhGA" alt=""></a>
+</div>
+
+
+</body>
+</html>
